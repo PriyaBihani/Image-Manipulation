@@ -6,18 +6,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<style>
-			body {
-				width: 90%;
-				margin: auto;
+			.mount {
+				max-width: 500px;
+				max-height: 500px;
+			}
+			img {
+				max-width: 500px;
+			}
+			canvas {
+				display: block;
+				width: 100%;
+				height: 100%;
 			}
 		</style>
 	</head>
 	<body>
-		<img id="img" src="./domokun-big.jpg" />
+		<div id="mount" class="mount">
+			<img id="img" src="./domokun-big.jpg" />
+		</div>
 		<button id="crop">Crop</button>
 		<button id="ok">Ok</button>
 		<button id="cancel">Cancel</button>
 		<script src="//unpkg.com/fabric@4.3.0/dist/fabric.js"></script>
+		<script src="dist/tinycrop.min.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>

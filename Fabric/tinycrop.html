@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>tinycrop: Lightweight pure JavaScript image crop</title>
+		<meta name="viewport" content="initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="dist/tinycrop.min.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1>tinycrop <img src="images/icon.svg" /></h1>
+			<p>
+				<a href="https://github.com/WebSeed/tinycrop"
+					>Lightweight pure JavaScript image crop</a
+				>
+			</p>
+		</header>
+		<div class="container">
+			<div id="mount" class="mount"></div>
+
+			<div class="info">
+				<div class="field-pair">
+					<div class="field">
+						<input type="text" id="input-x" value="0" />
+						<label for="input-x">X</label>
+					</div>
+					<div class="field">
+						<input type="text" id="input-y" value="0" />
+						<label for="input-x">Y</label>
+					</div>
+				</div>
+
+				<div class="field-pair">
+					<div class="field">
+						<input type="text" id="input-width" value="0" />
+						<label for="input-x">Width</label>
+					</div>
+					<div class="field">
+						<input type="text" id="input-height" value="0" />
+						<label for="input-x">Height</label>
+					</div>
+				</div>
+
+				<button id="swap-image">Swap image</button
+				><button id="aspect-16-by-9">16:9 aspect ratio</button
+				><button id="aspect-square">Square aspect ratio</button
+				><button id="aspect-free">Free aspect ratio</button
+				><button id="container-fit-to-image">Fit container to image</button
+				><button id="container-square">Square container</button
+				><button id="container-2-by-1">2:1 container</button
+				><button id="change-background-colors">Change background colors</button>
+			</div>
+
+			<footer class="footer">
+				Visit the
+				<a href="https://github.com/WebSeed/tinycrop">GitHub project</a> page.
+			</footer>
+		</div>
+
+		<script src="tinycrop.js"></script>
+	</body>
+</html>
